@@ -143,6 +143,7 @@ class ConsoleScreen extends StatelessWidget {
                                                   ColorfulText(text: ':q(uit)'),
                                               onTap: () {
                                                 Navigator.of(context).pop();
+						if(yateManager.runningCMD==null)return;
                                                 yateManager.runningCMD
                                                     .onYATEInput(
                                                         YATEInput(raw: ':q'));

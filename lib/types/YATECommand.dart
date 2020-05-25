@@ -10,7 +10,7 @@ abstract class YATECommand {
   @protected
   void onYATEInput(YATEInput yateInput)=>{
 	if(yateInput.raw==':q'||yateInput.raw==':quit') {
-		_yce.print('Exiting..'),
+//		_yce.print('Exiting..'),
 		_yce.removeLock(),
 	}
   };

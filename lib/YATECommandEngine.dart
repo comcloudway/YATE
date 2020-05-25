@@ -43,6 +43,7 @@ class YATECommandEngine {
 
   //Process Managment
   void removeLock() {
+	  this.print('Exiting...');
     yateManager.running=false;
     yateManager.runningCMD.onUnmount();
     yateManager.runningCMD=null;
